@@ -1,0 +1,383 @@
+== Paths
+=== hello
+----
+OPTIONS /srv/hotel
+----
+
+==== Responses
+[options="header"]
+|===
+|HTTP Code|Description|Schema
+|200|OK|string
+|204|No Content|No Content
+|401|Unauthorized|No Content
+|403|Forbidden|No Content
+|===
+
+==== Consumes
+
+* application/json
+
+==== Produces
+
+* */*
+
+==== Tags
+
+* index-control
+
+=== hello
+----
+DELETE /srv/hotel
+----
+
+==== Responses
+[options="header"]
+|===
+|HTTP Code|Description|Schema
+|200|OK|string
+|204|No Content|No Content
+|401|Unauthorized|No Content
+|403|Forbidden|No Content
+|===
+
+==== Consumes
+
+* application/json
+
+==== Produces
+
+* */*
+
+==== Tags
+
+* index-control
+
+=== hello
+----
+HEAD /srv/hotel
+----
+
+==== Responses
+[options="header"]
+|===
+|HTTP Code|Description|Schema
+|200|OK|string
+|204|No Content|No Content
+|401|Unauthorized|No Content
+|403|Forbidden|No Content
+|===
+
+==== Consumes
+
+* application/json
+
+==== Produces
+
+* */*
+
+==== Tags
+
+* index-control
+
+=== hello
+----
+GET /srv/hotel
+----
+
+==== Responses
+[options="header"]
+|===
+|HTTP Code|Description|Schema
+|200|OK|string
+|401|Unauthorized|No Content
+|403|Forbidden|No Content
+|404|Not Found|No Content
+|===
+
+==== Consumes
+
+* application/json
+
+==== Produces
+
+* */*
+
+==== Tags
+
+* index-control
+
+=== hello
+----
+PATCH /srv/hotel
+----
+
+==== Responses
+[options="header"]
+|===
+|HTTP Code|Description|Schema
+|200|OK|string
+|204|No Content|No Content
+|401|Unauthorized|No Content
+|403|Forbidden|No Content
+|===
+
+==== Consumes
+
+* application/json
+
+==== Produces
+
+* */*
+
+==== Tags
+
+* index-control
+
+=== hello
+----
+POST /srv/hotel
+----
+
+==== Responses
+[options="header"]
+|===
+|HTTP Code|Description|Schema
+|200|OK|string
+|201|Created|No Content
+|401|Unauthorized|No Content
+|403|Forbidden|No Content
+|404|Not Found|No Content
+|===
+
+==== Consumes
+
+* application/json
+
+==== Produces
+
+* */*
+
+==== Tags
+
+* index-control
+
+=== hello
+----
+PUT /srv/hotel
+----
+
+==== Responses
+[options="header"]
+|===
+|HTTP Code|Description|Schema
+|200|OK|string
+|201|Created|No Content
+|401|Unauthorized|No Content
+|403|Forbidden|No Content
+|404|Not Found|No Content
+|===
+
+==== Consumes
+
+* application/json
+
+==== Produces
+
+* */*
+
+==== Tags
+
+* index-control
+
+=== index2
+----
+OPTIONS /srv1/hotel
+----
+
+==== Responses
+[options="header"]
+|===
+|HTTP Code|Description|Schema
+|200|OK|string
+|204|No Content|No Content
+|401|Unauthorized|No Content
+|403|Forbidden|No Content
+|===
+
+==== Consumes
+
+* application/json
+
+==== Produces
+
+* */*
+
+==== Tags
+
+* index-control
+
+=== index2
+----
+DELETE /srv1/hotel
+----
+
+==== Responses
+[options="header"]
+|===
+|HTTP Code|Description|Schema
+|200|OK|string
+|204|No Content|No Content
+|401|Unauthorized|No Content
+|403|Forbidden|No Content
+|===
+
+==== Consumes
+
+* application/json
+
+==== Produces
+
+* */*
+
+==== Tags
+
+* index-control
+
+=== index2
+----
+HEAD /srv1/hotel
+----
+
+==== Responses
+[options="header"]
+|===
+|HTTP Code|Description|Schema
+|200|OK|string
+|204|No Content|No Content
+|401|Unauthorized|No Content
+|403|Forbidden|No Content
+|===
+
+==== Consumes
+
+* application/json
+
+==== Produces
+
+* */*
+
+==== Tags
+
+* index-control
+
+=== index2
+----
+GET /srv1/hotel
+----
+
+==== Responses
+[options="header"]
+|===
+|HTTP Code|Description|Schema
+|200|OK|string
+|401|Unauthorized|No Content
+|403|Forbidden|No Content
+|404|Not Found|No Content
+|===
+
+==== Consumes
+
+* application/json
+
+==== Produces
+
+* */*
+
+==== Tags
+
+* index-control
+
+=== index2
+----
+PATCH /srv1/hotel
+----
+
+==== Responses
+[options="header"]
+|===
+|HTTP Code|Description|Schema
+|200|OK|string
+|204|No Content|No Content
+|401|Unauthorized|No Content
+|403|Forbidden|No Content
+|===
+
+==== Consumes
+
+* application/json
+
+==== Produces
+
+* */*
+
+==== Tags
+
+* index-control
+
+=== index2
+----
+POST /srv1/hotel
+----
+
+==== Responses
+[options="header"]
+|===
+|HTTP Code|Description|Schema
+|200|OK|string
+|201|Created|No Content
+|401|Unauthorized|No Content
+|403|Forbidden|No Content
+|404|Not Found|No Content
+|===
+
+==== Consumes
+
+* application/json
+
+==== Produces
+
+* */*
+
+==== Tags
+
+* index-control
+
+=== index2
+----
+PUT /srv1/hotel
+----
+
+==== Responses
+[options="header"]
+|===
+|HTTP Code|Description|Schema
+|200|OK|string
+|201|Created|No Content
+|401|Unauthorized|No Content
+|403|Forbidden|No Content
+|404|Not Found|No Content
+|===
+
+==== Consumes
+
+* application/json
+
+==== Produces
+
+* */*
+
+==== Tags
+
+* index-control
+
