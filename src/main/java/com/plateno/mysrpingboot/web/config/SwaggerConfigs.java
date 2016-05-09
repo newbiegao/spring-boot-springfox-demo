@@ -62,17 +62,9 @@ public class SwaggerConfigs {
 
   private ApiInfo apiInfo() {
       return new ApiInfoBuilder()
-              .title("Springfox petstore API")
-              .description("Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum " +
-                      "has been the industry's standard dummy text ever since the 1500s, when an unknown printer "
-                      + "took a " +
-                      "galley of type and scrambled it to make a type specimen book. It has survived not only five " +
-                      "centuries, but also the leap into electronic typesetting, remaining essentially unchanged. " +
-                      "It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum " +
-                      "passages, and more recently with desktop publishing software like Aldus PageMaker including " +
-                      "versions of Lorem Ipsum.")
+              .title(" Spring boot 集成 Springfox 测试项目")
+              .description(" spring boot 通过 springfox 展示API文档并且可以在线测试 ")
               .termsOfServiceUrl("http://springfox.io")
-              .contact("springfox")
               .license("Apache License Version 2.0")
               .licenseUrl("https://github.com/springfox/springfox/blob/master/LICENSE")
               .version("2.0")

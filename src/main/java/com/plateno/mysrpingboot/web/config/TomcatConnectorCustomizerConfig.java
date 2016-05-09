@@ -11,9 +11,7 @@ public class TomcatConnectorCustomizerConfig implements TomcatConnectorCustomize
       
     connector.setAttribute("acceptCount", 1000);
     connector.setAttribute("connectionTimeout", 30000);
-    connector.setAttribute("maxThreads", 500);
-    
-    
+    connector.setAttribute("maxThreads", 5000);
     
   }
 
