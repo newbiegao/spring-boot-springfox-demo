@@ -1,6 +1,61 @@
 == Paths
 === hello
 ----
+PATCH /srv/hotel
+----
+
+==== Responses
+[options="header"]
+|===
+|HTTP Code|Description|Schema
+|200|OK|string
+|204|No Content|No Content
+|401|Unauthorized|No Content
+|403|Forbidden|No Content
+|===
+
+==== Consumes
+
+* application/json
+
+==== Produces
+
+* */*
+
+==== Tags
+
+* index-control
+
+=== hello
+----
+POST /srv/hotel
+----
+
+==== Responses
+[options="header"]
+|===
+|HTTP Code|Description|Schema
+|200|OK|string
+|201|Created|No Content
+|401|Unauthorized|No Content
+|403|Forbidden|No Content
+|404|Not Found|No Content
+|===
+
+==== Consumes
+
+* application/json
+
+==== Produces
+
+* */*
+
+==== Tags
+
+* index-control
+
+=== hello
+----
 OPTIONS /srv/hotel
 ----
 
@@ -12,6 +67,34 @@ OPTIONS /srv/hotel
 |204|No Content|No Content
 |401|Unauthorized|No Content
 |403|Forbidden|No Content
+|===
+
+==== Consumes
+
+* application/json
+
+==== Produces
+
+* */*
+
+==== Tags
+
+* index-control
+
+=== hello
+----
+PUT /srv/hotel
+----
+
+==== Responses
+[options="header"]
+|===
+|HTTP Code|Description|Schema
+|200|OK|string
+|201|Created|No Content
+|401|Unauthorized|No Content
+|403|Forbidden|No Content
+|404|Not Found|No Content
 |===
 
 ==== Consumes
@@ -107,9 +190,9 @@ GET /srv/hotel
 
 * index-control
 
-=== hello
+=== index2
 ----
-PATCH /srv/hotel
+PATCH /srv1/hotel
 ----
 
 ==== Responses
@@ -134,37 +217,9 @@ PATCH /srv/hotel
 
 * index-control
 
-=== hello
+=== index2
 ----
-POST /srv/hotel
-----
-
-==== Responses
-[options="header"]
-|===
-|HTTP Code|Description|Schema
-|200|OK|string
-|201|Created|No Content
-|401|Unauthorized|No Content
-|403|Forbidden|No Content
-|404|Not Found|No Content
-|===
-
-==== Consumes
-
-* application/json
-
-==== Produces
-
-* */*
-
-==== Tags
-
-* index-control
-
-=== hello
-----
-PUT /srv/hotel
+POST /srv1/hotel
 ----
 
 ==== Responses
@@ -203,6 +258,34 @@ OPTIONS /srv1/hotel
 |204|No Content|No Content
 |401|Unauthorized|No Content
 |403|Forbidden|No Content
+|===
+
+==== Consumes
+
+* application/json
+
+==== Produces
+
+* */*
+
+==== Tags
+
+* index-control
+
+=== index2
+----
+PUT /srv1/hotel
+----
+
+==== Responses
+[options="header"]
+|===
+|HTTP Code|Description|Schema
+|200|OK|string
+|201|Created|No Content
+|401|Unauthorized|No Content
+|403|Forbidden|No Content
+|404|Not Found|No Content
 |===
 
 ==== Consumes
@@ -281,89 +364,6 @@ GET /srv1/hotel
 |===
 |HTTP Code|Description|Schema
 |200|OK|string
-|401|Unauthorized|No Content
-|403|Forbidden|No Content
-|404|Not Found|No Content
-|===
-
-==== Consumes
-
-* application/json
-
-==== Produces
-
-* */*
-
-==== Tags
-
-* index-control
-
-=== index2
-----
-PATCH /srv1/hotel
-----
-
-==== Responses
-[options="header"]
-|===
-|HTTP Code|Description|Schema
-|200|OK|string
-|204|No Content|No Content
-|401|Unauthorized|No Content
-|403|Forbidden|No Content
-|===
-
-==== Consumes
-
-* application/json
-
-==== Produces
-
-* */*
-
-==== Tags
-
-* index-control
-
-=== index2
-----
-POST /srv1/hotel
-----
-
-==== Responses
-[options="header"]
-|===
-|HTTP Code|Description|Schema
-|200|OK|string
-|201|Created|No Content
-|401|Unauthorized|No Content
-|403|Forbidden|No Content
-|404|Not Found|No Content
-|===
-
-==== Consumes
-
-* application/json
-
-==== Produces
-
-* */*
-
-==== Tags
-
-* index-control
-
-=== index2
-----
-PUT /srv1/hotel
-----
-
-==== Responses
-[options="header"]
-|===
-|HTTP Code|Description|Schema
-|200|OK|string
-|201|Created|No Content
 |401|Unauthorized|No Content
 |403|Forbidden|No Content
 |404|Not Found|No Content

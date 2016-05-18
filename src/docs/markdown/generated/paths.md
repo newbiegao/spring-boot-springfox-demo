@@ -32,6 +32,73 @@ POST /users/addUser
 
 ### countUser
 ```
+PATCH /users/count/{name}/{age}
+```
+
+#### Parameters
+|Type|Name|Description|Required|Schema|Default|
+|----|----|----|----|----|----|
+|PathParameter|name|name|true|string||
+|PathParameter|age|age|true|integer (int32)||
+
+
+#### Responses
+|HTTP Code|Description|Schema|
+|----|----|----|
+|200|OK|integer (int32)|
+|204|No Content|No Content|
+|401|Unauthorized|No Content|
+|403|Forbidden|No Content|
+
+
+#### Consumes
+
+* application/json
+
+#### Produces
+
+* */*
+
+#### Tags
+
+* ç¨æ·APIæ¥å£
+
+### countUser
+```
+POST /users/count/{name}/{age}
+```
+
+#### Parameters
+|Type|Name|Description|Required|Schema|Default|
+|----|----|----|----|----|----|
+|PathParameter|name|name|true|string||
+|PathParameter|age|age|true|integer (int32)||
+
+
+#### Responses
+|HTTP Code|Description|Schema|
+|----|----|----|
+|200|OK|integer (int32)|
+|201|Created|No Content|
+|401|Unauthorized|No Content|
+|403|Forbidden|No Content|
+|404|Not Found|No Content|
+
+
+#### Consumes
+
+* application/json
+
+#### Produces
+
+* */*
+
+#### Tags
+
+* ç¨æ·APIæ¥å£
+
+### countUser
+```
 OPTIONS /users/count/{name}/{age}
 ```
 
@@ -49,6 +116,40 @@ OPTIONS /users/count/{name}/{age}
 |204|No Content|No Content|
 |401|Unauthorized|No Content|
 |403|Forbidden|No Content|
+
+
+#### Consumes
+
+* application/json
+
+#### Produces
+
+* */*
+
+#### Tags
+
+* ç¨æ·APIæ¥å£
+
+### countUser
+```
+PUT /users/count/{name}/{age}
+```
+
+#### Parameters
+|Type|Name|Description|Required|Schema|Default|
+|----|----|----|----|----|----|
+|PathParameter|name|name|true|string||
+|PathParameter|age|age|true|integer (int32)||
+
+
+#### Responses
+|HTTP Code|Description|Schema|
+|----|----|----|
+|200|OK|integer (int32)|
+|201|Created|No Content|
+|401|Unauthorized|No Content|
+|403|Forbidden|No Content|
+|404|Not Found|No Content|
 
 
 #### Consumes
@@ -162,107 +263,6 @@ GET /users/count/{name}/{age}
 
 * ç¨æ·APIæ¥å£
 
-### countUser
-```
-PATCH /users/count/{name}/{age}
-```
-
-#### Parameters
-|Type|Name|Description|Required|Schema|Default|
-|----|----|----|----|----|----|
-|PathParameter|name|name|true|string||
-|PathParameter|age|age|true|integer (int32)||
-
-
-#### Responses
-|HTTP Code|Description|Schema|
-|----|----|----|
-|200|OK|integer (int32)|
-|204|No Content|No Content|
-|401|Unauthorized|No Content|
-|403|Forbidden|No Content|
-
-
-#### Consumes
-
-* application/json
-
-#### Produces
-
-* */*
-
-#### Tags
-
-* ç¨æ·APIæ¥å£
-
-### countUser
-```
-POST /users/count/{name}/{age}
-```
-
-#### Parameters
-|Type|Name|Description|Required|Schema|Default|
-|----|----|----|----|----|----|
-|PathParameter|name|name|true|string||
-|PathParameter|age|age|true|integer (int32)||
-
-
-#### Responses
-|HTTP Code|Description|Schema|
-|----|----|----|
-|200|OK|integer (int32)|
-|201|Created|No Content|
-|401|Unauthorized|No Content|
-|403|Forbidden|No Content|
-|404|Not Found|No Content|
-
-
-#### Consumes
-
-* application/json
-
-#### Produces
-
-* */*
-
-#### Tags
-
-* ç¨æ·APIæ¥å£
-
-### countUser
-```
-PUT /users/count/{name}/{age}
-```
-
-#### Parameters
-|Type|Name|Description|Required|Schema|Default|
-|----|----|----|----|----|----|
-|PathParameter|name|name|true|string||
-|PathParameter|age|age|true|integer (int32)||
-
-
-#### Responses
-|HTTP Code|Description|Schema|
-|----|----|----|
-|200|OK|integer (int32)|
-|201|Created|No Content|
-|401|Unauthorized|No Content|
-|403|Forbidden|No Content|
-|404|Not Found|No Content|
-
-
-#### Consumes
-
-* application/json
-
-#### Produces
-
-* */*
-
-#### Tags
-
-* ç¨æ·APIæ¥å£
-
 ### å é¤ç¨æ·
 ```
 POST /users/deluser/{userId}
@@ -302,6 +302,59 @@ POST /users/deluser/{userId}
 
 ### addUsers
 ```
+PATCH /users/user/addusers
+```
+
+#### Responses
+|HTTP Code|Description|Schema|
+|----|----|----|
+|200|OK|UserEntity array|
+|204|No Content|No Content|
+|401|Unauthorized|No Content|
+|403|Forbidden|No Content|
+
+
+#### Consumes
+
+* application/json
+
+#### Produces
+
+* */*
+
+#### Tags
+
+* ç¨æ·APIæ¥å£
+
+### addUsers
+```
+POST /users/user/addusers
+```
+
+#### Responses
+|HTTP Code|Description|Schema|
+|----|----|----|
+|200|OK|UserEntity array|
+|201|Created|No Content|
+|401|Unauthorized|No Content|
+|403|Forbidden|No Content|
+|404|Not Found|No Content|
+
+
+#### Consumes
+
+* application/json
+
+#### Produces
+
+* */*
+
+#### Tags
+
+* ç¨æ·APIæ¥å£
+
+### addUsers
+```
 OPTIONS /users/user/addusers
 ```
 
@@ -312,6 +365,33 @@ OPTIONS /users/user/addusers
 |204|No Content|No Content|
 |401|Unauthorized|No Content|
 |403|Forbidden|No Content|
+
+
+#### Consumes
+
+* application/json
+
+#### Produces
+
+* */*
+
+#### Tags
+
+* ç¨æ·APIæ¥å£
+
+### addUsers
+```
+PUT /users/user/addusers
+```
+
+#### Responses
+|HTTP Code|Description|Schema|
+|----|----|----|
+|200|OK|UserEntity array|
+|201|Created|No Content|
+|401|Unauthorized|No Content|
+|403|Forbidden|No Content|
+|404|Not Found|No Content|
 
 
 #### Consumes
@@ -404,10 +484,16 @@ GET /users/user/addusers
 
 * ç¨æ·APIæ¥å£
 
-### addUsers
+### findUserByAge
 ```
-PATCH /users/user/addusers
+PATCH /users/user/age/{age}
 ```
+
+#### Parameters
+|Type|Name|Description|Required|Schema|Default|
+|----|----|----|----|----|----|
+|PathParameter|age|age|true|integer (int32)||
+
 
 #### Responses
 |HTTP Code|Description|Schema|
@@ -430,37 +516,16 @@ PATCH /users/user/addusers
 
 * ç¨æ·APIæ¥å£
 
-### addUsers
+### findUserByAge
 ```
-POST /users/user/addusers
+POST /users/user/age/{age}
 ```
 
-#### Responses
-|HTTP Code|Description|Schema|
-|----|----|----|
-|200|OK|UserEntity array|
-|201|Created|No Content|
-|401|Unauthorized|No Content|
-|403|Forbidden|No Content|
-|404|Not Found|No Content|
+#### Parameters
+|Type|Name|Description|Required|Schema|Default|
+|----|----|----|----|----|----|
+|PathParameter|age|age|true|integer (int32)||
 
-
-#### Consumes
-
-* application/json
-
-#### Produces
-
-* */*
-
-#### Tags
-
-* ç¨æ·APIæ¥å£
-
-### addUsers
-```
-PUT /users/user/addusers
-```
 
 #### Responses
 |HTTP Code|Description|Schema|
@@ -502,6 +567,39 @@ OPTIONS /users/user/age/{age}
 |204|No Content|No Content|
 |401|Unauthorized|No Content|
 |403|Forbidden|No Content|
+
+
+#### Consumes
+
+* application/json
+
+#### Produces
+
+* */*
+
+#### Tags
+
+* ç¨æ·APIæ¥å£
+
+### findUserByAge
+```
+PUT /users/user/age/{age}
+```
+
+#### Parameters
+|Type|Name|Description|Required|Schema|Default|
+|----|----|----|----|----|----|
+|PathParameter|age|age|true|integer (int32)||
+
+
+#### Responses
+|HTTP Code|Description|Schema|
+|----|----|----|
+|200|OK|UserEntity array|
+|201|Created|No Content|
+|401|Unauthorized|No Content|
+|403|Forbidden|No Content|
+|404|Not Found|No Content|
 
 
 #### Consumes
@@ -612,21 +710,21 @@ GET /users/user/age/{age}
 
 * ç¨æ·APIæ¥å£
 
-### findUserByAge
+### loadUserPageList
 ```
-PATCH /users/user/age/{age}
+PATCH /users/user/page/{page}
 ```
 
 #### Parameters
 |Type|Name|Description|Required|Schema|Default|
 |----|----|----|----|----|----|
-|PathParameter|age|age|true|integer (int32)||
+|PathParameter|page|page|true|integer (int32)||
 
 
 #### Responses
 |HTTP Code|Description|Schema|
 |----|----|----|
-|200|OK|UserEntity array|
+|200|OK|SimplePagedList|
 |204|No Content|No Content|
 |401|Unauthorized|No Content|
 |403|Forbidden|No Content|
@@ -644,54 +742,21 @@ PATCH /users/user/age/{age}
 
 * ç¨æ·APIæ¥å£
 
-### findUserByAge
+### loadUserPageList
 ```
-POST /users/user/age/{age}
-```
-
-#### Parameters
-|Type|Name|Description|Required|Schema|Default|
-|----|----|----|----|----|----|
-|PathParameter|age|age|true|integer (int32)||
-
-
-#### Responses
-|HTTP Code|Description|Schema|
-|----|----|----|
-|200|OK|UserEntity array|
-|201|Created|No Content|
-|401|Unauthorized|No Content|
-|403|Forbidden|No Content|
-|404|Not Found|No Content|
-
-
-#### Consumes
-
-* application/json
-
-#### Produces
-
-* */*
-
-#### Tags
-
-* ç¨æ·APIæ¥å£
-
-### findUserByAge
-```
-PUT /users/user/age/{age}
+POST /users/user/page/{page}
 ```
 
 #### Parameters
 |Type|Name|Description|Required|Schema|Default|
 |----|----|----|----|----|----|
-|PathParameter|age|age|true|integer (int32)||
+|PathParameter|page|page|true|integer (int32)||
 
 
 #### Responses
 |HTTP Code|Description|Schema|
 |----|----|----|
-|200|OK|UserEntity array|
+|200|OK|SimplePagedList|
 |201|Created|No Content|
 |401|Unauthorized|No Content|
 |403|Forbidden|No Content|
@@ -728,6 +793,39 @@ OPTIONS /users/user/page/{page}
 |204|No Content|No Content|
 |401|Unauthorized|No Content|
 |403|Forbidden|No Content|
+
+
+#### Consumes
+
+* application/json
+
+#### Produces
+
+* */*
+
+#### Tags
+
+* ç¨æ·APIæ¥å£
+
+### loadUserPageList
+```
+PUT /users/user/page/{page}
+```
+
+#### Parameters
+|Type|Name|Description|Required|Schema|Default|
+|----|----|----|----|----|----|
+|PathParameter|page|page|true|integer (int32)||
+
+
+#### Responses
+|HTTP Code|Description|Schema|
+|----|----|----|
+|200|OK|SimplePagedList|
+|201|Created|No Content|
+|401|Unauthorized|No Content|
+|403|Forbidden|No Content|
+|404|Not Found|No Content|
 
 
 #### Consumes
@@ -821,104 +919,6 @@ GET /users/user/page/{page}
 |HTTP Code|Description|Schema|
 |----|----|----|
 |200|OK|SimplePagedList|
-|401|Unauthorized|No Content|
-|403|Forbidden|No Content|
-|404|Not Found|No Content|
-
-
-#### Consumes
-
-* application/json
-
-#### Produces
-
-* */*
-
-#### Tags
-
-* ç¨æ·APIæ¥å£
-
-### loadUserPageList
-```
-PATCH /users/user/page/{page}
-```
-
-#### Parameters
-|Type|Name|Description|Required|Schema|Default|
-|----|----|----|----|----|----|
-|PathParameter|page|page|true|integer (int32)||
-
-
-#### Responses
-|HTTP Code|Description|Schema|
-|----|----|----|
-|200|OK|SimplePagedList|
-|204|No Content|No Content|
-|401|Unauthorized|No Content|
-|403|Forbidden|No Content|
-
-
-#### Consumes
-
-* application/json
-
-#### Produces
-
-* */*
-
-#### Tags
-
-* ç¨æ·APIæ¥å£
-
-### loadUserPageList
-```
-POST /users/user/page/{page}
-```
-
-#### Parameters
-|Type|Name|Description|Required|Schema|Default|
-|----|----|----|----|----|----|
-|PathParameter|page|page|true|integer (int32)||
-
-
-#### Responses
-|HTTP Code|Description|Schema|
-|----|----|----|
-|200|OK|SimplePagedList|
-|201|Created|No Content|
-|401|Unauthorized|No Content|
-|403|Forbidden|No Content|
-|404|Not Found|No Content|
-
-
-#### Consumes
-
-* application/json
-
-#### Produces
-
-* */*
-
-#### Tags
-
-* ç¨æ·APIæ¥å£
-
-### loadUserPageList
-```
-PUT /users/user/page/{page}
-```
-
-#### Parameters
-|Type|Name|Description|Required|Schema|Default|
-|----|----|----|----|----|----|
-|PathParameter|page|page|true|integer (int32)||
-
-
-#### Responses
-|HTTP Code|Description|Schema|
-|----|----|----|
-|200|OK|SimplePagedList|
-|201|Created|No Content|
 |401|Unauthorized|No Content|
 |403|Forbidden|No Content|
 |404|Not Found|No Content|

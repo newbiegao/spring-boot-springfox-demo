@@ -18,6 +18,4 @@ public class WebTest {
   {
     System.out.println("ok");
   }
-  
-  
 }
